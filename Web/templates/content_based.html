@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/content_based.css') }}">
+    <title>나의 피부 컨디션</title>
+</head>
+<body>
+<div class="title">나의 피부 컨디션</div>
+
+<div class="skin_type">    
+    <div class="category">피부 타입</div>
+    
+    <input type="radio" class="btn-check" name="skin_type" id="option5" autocomplete="off" value="지성" checked>
+    <label class="btn" for="option5">지성</label>
+
+    <input type="radio" class="btn-check" name="skin_type" id="option6" autocomplete="off" value="복합성">
+    <label class="btn" for="option6">복합성</label>
+
+    <input type="radio" class="btn-check" name="skin_type" id="option7" autocomplete="off" value="중성">
+    <label class="btn" for="option7">중성</label>
+
+    <input type="radio" class="btn-check" name="skin_type" id="option9" autocomplete="off" value="약건성">
+    <label class="btn" for="option9">약건성</label>
+
+    <input type="radio" class="btn-check" name="skin_type" id="option11" autocomplete="off" value="건성">
+    <label class="btn" for="option11">건성</label>
+</div>
+<div class="importance">    
+    <div class="category">가장 중요한 요소</div>
+    
+    <input type="radio" class="btn-check" name="skin_tone" id="option12" autocomplete="off" value="상관없음" checked>
+    <label class="btn" for="option12">상관없음</label>
+
+    <input type="radio" class="btn-check" name="skin_tone" id="option13" autocomplete="off" value="발색력">
+    <label class="btn" for="option13">발색력</label>
+
+    <input type="radio" class="btn-check" name="skin_tone" id="option14" autocomplete="off" value="지속력">
+    <label class="btn" for="option14">지속력</label>
+    
+    <input type="radio" class="btn-check" name="skin_tone" id="option15" autocomplete="off" value="발림성">
+    <label class="btn" for="option15">발림성</label>
+</div>
+<div class="tags">
+    <div class="category" id="category_3">피부 고민</div>
+    <div class="info">복수 선택 가능</div>
+    <input type="checkbox" class="btn-check" name="skin_troube" id="btn-check-1" autocomplete="off" value="잡티">
+    <label class="btn" for="btn-check-1">잡티</label>
+    <input type="checkbox" class="btn-check" name="skin_troube" id="btn-check-3" autocomplete="off" value="주름">
+    <label class="btn" for="btn-check-3">주름</label>
+    <input type="checkbox" class="btn-check" name="skin_troube" id="btn-check-4" autocomplete="off" value="각질">
+    <label class="btn" for="btn-check-4">각질</label>
+    <input type="checkbox" class="btn-check" name="skin_troube" id="btn-check-5" autocomplete="off" value="트러블">
+    <label class="btn" for="btn-check-5">트러블</label>
+    <input type="checkbox" class="btn-check" name="skin_troube" id="btn-check-7" autocomplete="off" value="피지과다">
+    <label class="btn" for="btn-check-7">피지과다</label>
+    <input type="checkbox" class="btn-check" name="skin_troube" id="btn-check-8" autocomplete="off" value="민감성">
+    <label class="btn" for="btn-check-8">민감성</label>
+    <input type="checkbox" class="btn-check" name="skin_troube" id="btn-check-9" autocomplete="off" value="모공">
+    <label class="btn" for="btn-check-9">모공</label>
+    <input type="checkbox" class="btn-check" name="skin_troube" id="btn-check-11" autocomplete="off" value="홍조">
+    <label class="btn" for="btn-check-11">홍조</label>
+    <input type="checkbox" class="btn-check" name="skin_troube" id="btn-check-12" autocomplete="off" value="아토피">
+    <label class="btn" for="btn-check-12">아토피</label>
+</div>
+
+<button type="button" class="btn btn-dark" value="submit" onclick="submitFunction()">완료</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ url_for('static', filename='js/content_based.js') }}"></script>
+</body>
+</html>

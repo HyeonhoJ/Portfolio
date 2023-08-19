@@ -1,0 +1,90 @@
+body {
+	background-color: black;
+	margin: 0;
+    padding: 0;
+    height: 100vh; /* 화면 높이의 100%를 차지하도록 설정합니다. */
+    background-image: url('../img/pearl_girl.png');
+    background-size: contain; /* 배경 이미지를 컨테이너에 맞게 확대 또는 축소합니다. */
+    background-position: center; /* 배경 이미지를 가운데로 정렬합니다. */
+    background-repeat: no-repeat; /* 배경 이미지를 반복하지 않도록 설정합니다. */
+}
+
+.top {
+	height: 90%;
+	display: flex;
+}
+
+.text {
+	/* background-color: rgb(99, 167, 235); */
+	color: white;
+	width: 50%;
+	font-size: 150px;
+	margin-left: 50px;
+	line-height:1.1;
+	text-align: left;
+	font-family: "Bodoni MT";
+}
+
+.bottom {
+	/* background-color: lightslategray; */
+	height: 10%;
+}
+
+button {
+	background-color: white;
+	color: black;
+	padding: 15px 32px;
+	margin: auto;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 50%;
+	display: block;
+}
+
+button:hover {
+	background-color: black;
+	color: white;
+}
+/* .77_25 { 
+	overflow:hidden;
+}
+.e77_25 { 
+	width:1440px;
+	height:780px;
+	position:absolute;
+	background-image:url(images/macbook_pro_14____1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e77_26 { 
+	color:rgba(255, 255, 255, 1);
+	width:514px;
+	height:688px;
+	position:absolute;
+	left:84px;
+	top:46px;
+	font-family:Bodoni MT;
+	text-align:left;
+	font-size:130px;
+	letter-spacing:0;
+}
+.e77_27 { 
+	width:90px;
+	height:89.24369812011719px;
+	position:absolute;
+	left:711px;
+	top:869px;
+	background-image:url(images/down_arrow_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e77_28 { 
+	width:64px;
+	height:64px;
+	position:absolute;
+	left:688px;
+	top:702px;
+	background-image:url(images/down_arrow_2.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+} */
