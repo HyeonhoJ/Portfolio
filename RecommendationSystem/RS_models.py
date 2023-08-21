@@ -71,7 +71,7 @@ def keywords_processing(keywords):
     return new_row, selected_detail_score
 
 
-# popularity score
+# popularity score 
 def weighted_score(df, selected_detail_score, w=0.5):
     return w * df['color_score'] + (1 - w) * (df[selected_detail_score] + df['detail_score1'] + df['detail_score2'] + df['detail_score3'] - df['weight']) / (3 - df['weight'])
 
